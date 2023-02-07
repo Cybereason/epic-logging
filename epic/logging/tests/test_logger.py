@@ -104,6 +104,14 @@ class TestPreconfiguredLoggers:
                 logging.StreamHandler, logging.FileHandler,
             )
 
+    def test_encoding(self, tmp_path):
+        logger = get_console_logger('test_encoding_emoji_console')
+        logger.info("⚠️")
+        logger = get_file_logger('test_encoding_emoji_file', tmp_path / 'emoji.log')
+        logger.info("⚠️")
+        logger = get_file_and_console_logger('test_encoding_emoji_file_and_console', tmp_path / 'emoji_fac.log')
+        logger.info("⚠️")
+
 
 def business_code(logname: str, message, level=logging.INFO) -> None:
     """Some code that uses logging to be run by child processes and such in order to test Logregator."""
