@@ -13,6 +13,8 @@ setup:
     - epic
   version_module_paths:
     - epic/logging
+  install_requires:
+    - epic-common
 
   classifiers:
     - "Development Status :: 4 - Beta"

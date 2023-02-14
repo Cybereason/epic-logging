@@ -8,7 +8,8 @@ from pathlib import Path
 from types import ModuleType
 from typing import Protocol, TypeVar
 
-from ._iterable_queue import IterableQueue
+from epic.common.queue import IterableQueue
+
 from .logger import get_console_logger, get_file_logger, get_file_and_console_logger, LogLevel
 
 

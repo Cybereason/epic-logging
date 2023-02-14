@@ -1,4 +1,4 @@
-# Epic logging - Easy logging with multiprocessing support
+# Epic logging &mdash; Easy logging with multiprocessing support
 [![Epic-logging CI](https://github.com/Cybereason/epic-logging/actions/workflows/ci.yml/badge.svg)](https://github.com/Cybereason/epic-logging/actions/workflows/ci.yml)
 
 
